@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class='content-area'>
+        <p>Try copying/pasting this: <code>123456</code></p>
+        
+      </div>
+      
+      <form onsubmit="onSubmit(event)" class="content-area">
+        <h4>Verify Login Code</h4>
+        <h5>Welcome Back!</h5>
+        <p>
+          It looks like you're trying to login from a new device.
+          As an added security mesure, please enter the 6-character code sent to your email.
+        </p>
+        <p><a href='#'>Need help?</a></p>
+        <fieldset class='number-code'>
+          <legend>Security Code</legend>
+          <div>
+            <input name='code' class='code-input' required/>
+            <input name='code' class='code-input' required/>
+            <input name='code' class='code-input' required/>
+            <input name='code' class='code-input' required/>
+            <input name='code' class='code-input' required/>
+            <input name='code' class='code-input' required/>
+          </div>
+        </fieldset>
+        <p><a href='#'>Resend Code</a></p>
+        <input type="submit" value="Submit">
+      </form>
+    
+</body>
+<script src="app.js"></script>
+</html>
